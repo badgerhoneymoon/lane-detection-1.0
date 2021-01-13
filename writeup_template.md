@@ -55,13 +55,20 @@ My pipeline consisted of 6 steps.
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
+* One potential shortcoming would be what would happen when we have curvatures on the road. Line approximation would be irrelevant and we need to dynamically change lenghts of our drawn lines. Now they are hard-coded.
 
-Another shortcoming could be ...
+* Another shortcoming could be night time with low visibility. Our filter parameters are adjusted to daytime.
+
+* Another shortcoming could be when a car in front of us blocks the sight of lanes. Without prediction model we would fail to recognize.
+
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+* A possible improvement would be to use another approximations when we have twisting road
 
-Another potential improvement could be to ...
+* Another potential improvement could be to use historical data to smooth or even predict the lane lines
+
+* To tackle nighttime we would need to determine which part of the day we witness and depending on that use different filter parameters.
+
+
