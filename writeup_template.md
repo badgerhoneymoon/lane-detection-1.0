@@ -65,7 +65,7 @@ My pipeline consisted of 6 steps.
 
 ### 3. Suggest possible improvements to your pipeline
 
-* A possible improvement would be to use another approximations when we have twisting road
+* A possible improvement would be to use other approximations when we have twisting road
 
 * Another potential improvement could be to use historical data to smooth or even predict the lane lines
 
