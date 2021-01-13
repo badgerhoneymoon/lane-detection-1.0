@@ -26,14 +26,20 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of 5 steps. 
 1. I converted the images to grayscale:
+
 ![alt text][image1]
 
 2. Canny filter edge detection is implied:
+
 ![alt text][image2]
 
+3. Put a quadrilateral mask on the region of interest
+
+![alt text][image3]
+
+4. Then I used Hough transformation to detect lines. After
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
 
 
