@@ -2,8 +2,6 @@
 
 ## Writeup Template
 
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
 ---
 
 **Finding Lane Lines on the Road**
@@ -15,21 +13,35 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
-
+[image1]: ./test_images_output/grey.jpg "Grayscale"
+[image2]: ./test_images_output/edges.jpg "Edge detection"
+[image3]: ./test_images_output/masked_edges.jpg "Edges after masking"
+[image4]: ./test_images_output/lines.jpg "Left & Right lines"
+[image5]: ./test_images_output/result.jpg "Result"
 ---
 
 ### Reflection
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+My pipeline consisted of 5 steps. 
+1. I converted the images to grayscale:
 
 ![alt text][image1]
+
+2. Canny filter edge detection is implied:
+
+![alt text][image2]
+
+3. Put a quadrilateral mask on the region of interest
+
+![alt text][image3]
+
+4. Then I used Hough transformation to detect lines. After
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+
+
+
 
 
 ### 2. Identify potential shortcomings with your current pipeline
