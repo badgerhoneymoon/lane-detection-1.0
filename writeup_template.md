@@ -26,28 +26,29 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 6 steps. 
+My pipeline consisted of 6 steps.
+
 **1. I converted the images to grayscale:**
 
 ![alt text][image1]
 
-**2. Canny filter edge detection is implied:
+**2. Canny filter edge detection is implied:**
 
 ![alt text][image2]
 
-**3. Put a quadrilateral mask on the region of interest
+**3. Put a quadrilateral mask on the region of interest**
 
 ![alt text][image3]
 
-**4. Then I used Hough transformation to detect lines:
+**4. Then I used Hough transformation to detect lines:**
 
 ![alt text][image6]
 
-**5. In order to draw a single line on the left and right lanes, I modified the draw_lines() function by averaging centers and slopes of lines detected after Hough Transformation:
+**5. In order to draw a single line on the left and right lanes, I modified the draw_lines() function by averaging centers and slopes of lines detected after Hough Transformation:**
 
 ![alt text][image4]
 
-**6. Merging lines and our original image gives us this: 
+**6. Merging lines and our original image gives us this:**
 
 ![alt text][image5]
 
