@@ -14,20 +14,28 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./test_images_output/grey.jpg "Grayscale"
-
+[image2]: ./test_images_output/edges.jpg "Edge detection"
+[image3]: ./test_images_output/masked_edges.jpg "Edges after masking"
+[image4]: ./test_images_output/lines.jpg "Left & Right lines"
+[image5]: ./test_images_output/result.jpg "Result"
 ---
 
 ### Reflection
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consisted of 5 steps. 
+1. I converted the images to grayscale:
+![alt text][image1]
+
+2. Canny filter edge detection is implied:
+![alt text][image2]
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![alt text][image1]
+
 
 
 ### 2. Identify potential shortcomings with your current pipeline
